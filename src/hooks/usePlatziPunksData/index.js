@@ -1,4 +1,4 @@
-import { useWeb3React } from '@web3-react/core';
+// import { useWeb3React } from '@web3-react/core';
 import { useCallback, useEffect, useState } from 'react';
 import usePlatziPunks from '../usePlatziPunks';
 
@@ -120,32 +120,32 @@ const usePlatziPunksData = () => {
 };
 
 // Singular
-// const usePlatziPunkData = (tokenId = null) => {
-// 	const [punk, setPunk] = useState({});
-// 	const [loading, setLoading] = useState(true);
-// 	const platziPunks = usePlatziPunks();
+const usePlatziPunkData = (tokenId = null) => {
+	const [punk, setPunk] = useState({});
+	const [loading, setLoading] = useState(true);
+	const platziPunks = usePlatziPunks();
 
-// 	const update = useCallback(async () => {
-// 		if (platziPunks && tokenId != null) {
-// 			setLoading(true);
+	const update = useCallback(async () => {
+		if (platziPunks && tokenId != null) {
+			setLoading(true);
 
-// 			const toSet = await getPunkData({ tokenId, platziPunks });
-// 			setPunk(toSet);
+			const toSet = await getPunkData({ tokenId, platziPunks });
+			setPunk(toSet);
 
-// 			setLoading(false);
-// 		}
-// 	}, [platziPunks, tokenId]);
+			setLoading(false);
+		}
+	}, [platziPunks, tokenId]);
 
-// 	useEffect(() => {
-// 		update();
-// 	}, [update]);
+	useEffect(() => {
+		update();
+	}, [update]);
 
-// 	return {
-// 		loading,
-// 		punk,
-// 		update,
-// 	};
-// };
+	return {
+		loading,
+		punk,
+		update,
+	};
+};
 
 // export { usePlatziPunksData, usePlatziPunkData };
-export { usePlatziPunksData };
+export { usePlatziPunksData, usePlatziPunkData };
