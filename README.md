@@ -6,6 +6,7 @@ Notes:
 
 - Public Gateways in IPFS
 - Use Rinkeby network to connect your Metamask
+- [OpenSea Testnet](https://testnets.opensea.io/collection/platzipunks-manqxpk8cb)
 
 # Getting Started with Create React App
 
