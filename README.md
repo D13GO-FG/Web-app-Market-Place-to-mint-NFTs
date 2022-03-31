@@ -1,3 +1,12 @@
+# Web app of market place to mint NFTs
+
+## [Link to web app](https://bafybeifcxpuioqxxigtdwlf3rck77tfg63p6algjs5klahz5sgrpjkcdvu.ipfs.dweb.link/#/)
+
+Notes:
+
+- Public Gateways in IPFS
+- Use Rinkeby network to connect your Metamask
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
